@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+    
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Setup Node.js 24 explicitly
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
 
-      # Run Hello World
+  
       - name: Print Hello World
         run: echo "Hello World"
